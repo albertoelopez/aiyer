@@ -1,10 +1,10 @@
-import Image from "next/image";
+import React from "react";
 import HomeComponent from "./components/Home";
 
 export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="flex flex-col h-screen w-full px-0 pb-4 sm:pb-8">
+      <main className="flex flex-1 w-full bg-white rounded-lg shadow-md">
         <HomeComponent />
       </main>
     </div>
