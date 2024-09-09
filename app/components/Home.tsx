@@ -2,6 +2,8 @@
 
 import React, { useState, useRef } from 'react';
 import { FaFile } from 'react-icons/fa'; // Make sure to install react-icons
+import Image from 'next/image';
+import AiyerLogo from '../public/img/aiyer_logo.svg';
 
 interface Message {
   id: number;
@@ -96,8 +98,9 @@ const Chat: React.FC = () => {
       {/* Sidebar for logo and upload button */}
       <div className="w-24 bg-gray-100 flex flex-col items-center p-4">
         <div className="mb-8">
-          {/* Replace with your actual logo */}
-          <div className="w-16 h-16 bg-blue-500 rounded-full"></div>
+          <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center overflow-hidden">
+            <Image src={AiyerLogo} alt="Logo" width={72} height={72} />
+          </div>
         </div>
         <input
           type="file"
