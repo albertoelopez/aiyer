@@ -6,7 +6,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 const embHeaders = {
   'Content-Type': 'application/json',
-  'Authorization': 'Bearer up_0HoSBitRZ4rg1JF52GCHve5phQuNH',
+  'Authorization': `Bearer ${process.env.AIYER_KEY}`,
 };
 
 const supabase = createClient(
